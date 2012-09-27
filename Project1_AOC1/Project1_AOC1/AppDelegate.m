@@ -48,7 +48,7 @@
     NSLog(@"Oh no... it's not just one roach!  There's got to be more than %d on the wall!", bootCloset);
     
     //casting float to an int w/ NSLog
-    NSLog(@"I remember there being about %.0f boots in the closet", (float)bootCloset);
+    NSLog(@"I remember there being about %.0f shoes in the closet", (float)bootCloset);
     
     NSLog(@"Since I don't have %d shoe on my foot, I need to get to the closet and check to see if the shoes are there!", singleBoot);
     
@@ -66,7 +66,7 @@
     
     NSLog(@"Oh! There are some shoes in the next room; I had forgotten.");
     
-    //And/Or comparison - int, BOOL, and float
+    //And/Or comparison
     if ((bootCloset > 20) && (willFindBoot == YES)) {
         NSLog(@"There are too many shoes; more than enough ammo!");
     }
