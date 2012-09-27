@@ -87,14 +87,15 @@
     }
     
     //while loop!
-    
-    while (chanceToHitBug > 1) {
+    while (chanceToHitBug >= 10) {
         NSLog(@"With all these shoes, I was able to kill %d roaches from afar.  Huzzah!", (int)chanceToHitBug);
         chanceToHitBug--;
     }
     
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
