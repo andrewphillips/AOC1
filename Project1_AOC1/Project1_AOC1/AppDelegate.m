@@ -35,11 +35,8 @@
     int bootPair = 2;
     int singleBoot = 1;
     int bootCloset = 20;
-    BOOL hasBootOnFoot = YES;
-    BOOL nearByShoe = NO;
     BOOL willFindBoot = YES;
     float chanceToHitBug = 20.1f;
-    float roachesIncrease = 10.5f;
     //end variables
     
     // Start of my Story
