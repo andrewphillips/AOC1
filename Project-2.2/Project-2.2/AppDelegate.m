@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Project 2
+//  Project-2.2
 //
 //  Created by Andrew Phillips on 10/4/12.
 //  Copyright (c) 2012 Andrew Phillips. All rights reserved.
@@ -8,13 +8,20 @@
 
 #import "AppDelegate.h"
 
-
 @implementation AppDelegate
 
+- (void)dealloc
+{
+    [_window release];
+    [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

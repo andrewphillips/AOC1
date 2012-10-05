@@ -13,9 +13,6 @@
 		492BD96E161E55E800F84E83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 492BD96C161E55E800F84E83 /* InfoPlist.strings */; };
 		492BD970161E55E800F84E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 492BD96F161E55E800F84E83 /* main.m */; };
 		492BD974161E55E800F84E83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 492BD973161E55E800F84E83 /* AppDelegate.m */; };
-		492BD976161E55E800F84E83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 492BD975161E55E800F84E83 /* Default.png */; };
-		492BD978161E55E800F84E83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 492BD977161E55E800F84E83 /* Default@2x.png */; };
-		492BD97A161E55E800F84E83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 492BD979161E55E800F84E83 /* Default-568h@2x.png */; };
 		492BD97D161E55E800F84E83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492BD97C161E55E800F84E83 /* ViewController.m */; };
 		492BD980161E55E800F84E83 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492BD97E161E55E800F84E83 /* ViewController.xib */; };
 /* End PBXBuildFile section */
@@ -31,9 +28,6 @@
 		492BD971161E55E800F84E83 /* Project 2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project 2-Prefix.pch"; sourceTree = "<group>"; };
 		492BD972161E55E800F84E83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		492BD973161E55E800F84E83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		492BD975161E55E800F84E83 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		492BD977161E55E800F84E83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		492BD979161E55E800F84E83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		492BD97B161E55E800F84E83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		492BD97C161E55E800F84E83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		492BD97F161E55E800F84E83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
@@ -100,9 +94,6 @@
 				492BD96C161E55E800F84E83 /* InfoPlist.strings */,
 				492BD96F161E55E800F84E83 /* main.m */,
 				492BD971161E55E800F84E83 /* Project 2-Prefix.pch */,
-				492BD975161E55E800F84E83 /* Default.png */,
-				492BD977161E55E800F84E83 /* Default@2x.png */,
-				492BD979161E55E800F84E83 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,9 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				492BD96E161E55E800F84E83 /* InfoPlist.strings in Resources */,
-				492BD976161E55E800F84E83 /* Default.png in Resources */,
-				492BD978161E55E800F84E83 /* Default@2x.png in Resources */,
-				492BD97A161E55E800F84E83 /* Default-568h@2x.png in Resources */,
 				492BD980161E55E800F84E83 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
