@@ -82,7 +82,7 @@
     //Plot summary
     UILabel *plotSummary = [[UILabel alloc] initWithFrame:CGRectMake(10, 130, 300, 235)];
     if (plotSummary != nil) {
-        plotSummary.text = @"Five years after Return of the Jedi, as the New Republic holds a fragile foothold in control of the galaxy, a new threat emerges. Having been posted so far away from action, Grand Admiral Thrawn, a cunning and intelligent Chiss commander, begins to gather his Imperial forces for a strategic attack on the New Republic. The chain of events caused major unrest in the New Republic.";
+        plotSummary.text = @"Five years after Return of the Jedi, as the New Republic holds a fragile foothold in control of the galaxy, a new threat emerges. Having been posted so far away from action, Grand Admiral Thrawn, a cunning and intelligent Chiss commander, begins to gather his Imperial forces for a strategic attack on the New Republic. A sinister chain of events has begun major unrest in the New Republic.";
         plotSummary.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1]; /*#ffffff*/
         plotSummary.textAlignment = UITextAlignmentLeft;
         plotSummary.textColor = [UIColor brownColor];
