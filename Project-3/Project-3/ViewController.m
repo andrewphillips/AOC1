@@ -68,11 +68,11 @@
     
     
 // 6-Call the Add function passing in two integer values. Capture the return of this function into a variable.
-    int result = [self add:arc4random() num2:arc4random()];
+    int passResult = [self add:arc4random() num2:arc4random()];
     
 
 // 7-Bundle the returned integer into an NSNumber and then convert it to a NSString and pass it to the DisplayAlertWithString function.
-    NSNumber *nsNum = [[NSNumber alloc] initWithInt:result];
+    NSNumber *nsNum = [[NSNumber alloc] initWithInt:passResult];
     
     
 // 8-Give it some text for the title. The message will read, "The number is 00". Replace the 00 with the integer passed into the function.
@@ -84,7 +84,7 @@
 
 // 9-Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
     int compare1 = 50;
-    int compare2 = arc4random() % 10;;
+    int compare2 = arc4random() % 20;;
     BOOL comparedNumrz = [self Compare:compare1 nsVal2:compare2];
     NSString *compareStrgTime = [NSString stringWithFormat:@"Are %d and %d equal? %@", compare1, compare2, comparedNumrz?@"YES" : @"NO"];
     
