@@ -9,8 +9,6 @@
 
 /*
  
- 5) Create a function called DisplayAlertWithString. This function will take as a parameter an NSString.
- 6) Call the Add function passing in two integer values. Capture the return of this function into a variable.
  7) Bundle the returned integer into an NSNumber and then convert it to a NSString and pass it to the DisplayAlertWithString function.
  8) Give it some text for the title. The message will read, "The number is 00". Replace the 00 with the integer passed into the function.
  9) Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
@@ -31,7 +29,7 @@
 - (int)add:(int)num1 num2:(int)num2
     {
         return  num1 + num2;
-    }// end 1
+    }
 
     
 // 2-Create a BOOL function called Compare that takes two NSInteger values. Return YES or NO based on whether the values are equal.
@@ -44,7 +42,7 @@
         {
             return NO;
         }
-    }// end 2
+    }
 
     
 // 3-Create a function called Append. This function will take two NSStrings and return a new NSString containing the appended strings using an NSMutableString and the Append method.
@@ -53,17 +51,15 @@
         NSMutableString *appdNewStrg = [[NSMutableString alloc] initWithString:strg1];
         [appdNewStrg appendString:strg2];
         return appdNewStrg;
-    }// end 3
+    }
 
 
 // 4-Call the Append function with two NSStrings. Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
-
     NSString *funkyAlert = [self Append:@"Alerts are Funky! " strg2:@"You can't press Accept fast enough!"];
     [self DisplayAlertWithString:funkyAlert];
     
 
-// 5-Create a function called DisplayAlertWithString. This function will take as a parameter an NSString.
-    
+// 5-Create a function called DisplayAlertWithString. This function will take as a parameter an NSString. 
 - (void)DisplayAlertWithString:(NSString *)stringAlert
     {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!" message:stringAlert delegate:nil cancelButtonTitle:@"Press Me!" otherButtonTitles:nil, nil];
@@ -74,6 +70,10 @@
     }
     
     
+// 6-Call the Add function passing in two integer values. Capture the return of this function into a variable.
+    int result = [self add:arc4random() num2:arc4random()];
+    
+
     
     
     
