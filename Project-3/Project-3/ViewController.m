@@ -60,10 +60,10 @@
 
 - (void)viewDidLoad
 {
-/****************** Calls Start ***********/
+/****************** Start Calling! *********************/
 
 // 4-Call the Append function with two NSStrings. Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
-    NSString *funkyAlert = [self Append:@"Alerts are Funky! " strg2:@"You can't press Accept fast enough!"];
+    NSString *funkyAlert = [self Append:@"Alerts are Funky! " strg2:@"You can't tap it fast enough! So many alerts :-D"];
     [self DisplayAlertWithString:funkyAlert];
     
     
@@ -84,14 +84,14 @@
 
 // 9-Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
     int compare1 = 50;
-    int compare2 = arc4random() % 2;;
+    int compare2 = arc4random() % 10;;
     BOOL comparedNumrz = [self Compare:compare1 nsVal2:compare2];
     NSString *compareStrgTime = [NSString stringWithFormat:@"Are %d and %d equal? %@", compare1, compare2, comparedNumrz?@"YES" : @"NO"];
     
     [self DisplayAlertWithString:compareStrgTime];    
     
     
-    
+/***************End of Week 3 ************************/
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
