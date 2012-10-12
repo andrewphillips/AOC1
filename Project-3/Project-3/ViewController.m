@@ -49,10 +49,10 @@
 // 5-Create a function called DisplayAlertWithString. This function will take as a parameter an NSString.
 - (void)DisplayAlertWithString:(NSString *)stringAlert
 {
-    UIAlertView *stringAlert = [[UIAlertView alloc] initWithTitle:@"Alert!" message:stringAlert delegate:nil cancelButtonTitle:@"Press Me!" otherButtonTitles:nil, nil];
-    if (stringAlert != nil)
+    UIAlertView *viewAlert = [[UIAlertView alloc] initWithTitle:@"Alert!" message:stringAlert delegate:nil cancelButtonTitle:@"Press Me!" otherButtonTitles:nil, nil];
+    if (viewAlert != nil)
     {
-        [stringAlert show];
+        [viewAlert show];
     }
 }
 
