@@ -9,7 +9,6 @@
 
 /*
  
- 4) Call the Append function with two NSStrings. Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
  5) Create a function called DisplayAlertWithString. This function will take as a parameter an NSString.
  6) Call the Add function passing in two integer values. Capture the return of this function into a variable.
  7) Bundle the returned integer into an NSNumber and then convert it to a NSString and pass it to the DisplayAlertWithString function.
@@ -36,7 +35,7 @@
 
     
 // 2-Create a BOOL function called Compare that takes two NSInteger values. Return YES or NO based on whether the values are equal.
-- (BOOL)Compare:(NSInteger)nsVal1 nsval2:(NSInteger)nsVal2
+- (BOOL)Compare:(NSInteger)nsVal1 nsVal2:(NSInteger)nsVal2
     {
         if (nsVal1 == nsVal2) {
             return YES;
@@ -58,11 +57,21 @@
 
 
 // 4-Call the Append function with two NSStrings. Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
-- (
 
+    NSString *funkyAlert = [self Append:@"Alerts are Funky! " strg2:@"You can't press Accept fast enough!"];
+    [self DisplayAlertWithString:funkyAlert];
     
+
+// 5-Create a function called DisplayAlertWithString. This function will take as a parameter an NSString.
     
-    
+- (void)DisplayAlertWithString:(NSString *)stringAlert
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!" message:stringAlert delegate:nil cancelButtonTitle:@"Press Me!" otherButtonTitles:nil, nil];
+        if (stringAlert != nil)
+        {
+            [stringAlert show];
+        }
+    }
     
     
     
