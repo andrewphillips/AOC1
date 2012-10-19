@@ -15,6 +15,9 @@
     UIButton *loginButton;
     UILabel *usernameEntr;
     UIButton *showTheDate;
+    UIButton *infoButton;
+    UILabel *infobtnLabel;
+    
     
 }
 

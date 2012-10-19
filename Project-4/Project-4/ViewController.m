@@ -22,7 +22,8 @@
 {
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-/*****************Login Section ******************************************/
+/**************************Login Section ******************************************/
+    
     //create UILabel near top of screen with text 'username'
     usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 12, 90, 20)];
     if (usernameLabel != nil)
@@ -47,7 +48,7 @@
         loginButton.tag = LOGIN_BTN;
         loginButton.frame = CGRectMake(220, 55, 90, 30);
         loginButton.tintColor = [UIColor greenColor];
-        [loginButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        [loginButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
         [loginButton setTitle:@"Login" forState:UIControlStateNormal];
         [self.view addSubview:loginButton];
     }
@@ -78,8 +79,26 @@
         [self.view addSubview:showTheDate];
     }
     
+    //create the info button
+    infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    if (infoButton != nil)
+    {
+        infoButton.tag = INFO_BTN;
+        infoButton.frame = CGRectMake(10, 360, 30, 30);
+        [infoButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:infoButton];
+    }
     
-    
+    //create empty label beneath infoButton
+    infobtnLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 400, 300, 40)];
+    if (infobtnLabel != nil)
+    {
+        infobtnLabel.textColor = [UIColor whiteColor];
+        infobtnLabel.backgroundColor = [UIColor darkGrayColor];
+        infobtnLabel.textAlignment = NSTextAlignmentLeft;
+        infobtnLabel.numberOfLines = 2;
+        [self.view addSubview:infobtnLabel];
+    }
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
