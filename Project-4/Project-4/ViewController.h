@@ -17,8 +17,6 @@
     UIButton *showTheDate;
     UIButton *infoButton;
     UILabel *infobtnLabel;
-    
-    
 }
 
 @end

@@ -20,9 +20,9 @@
 
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
-/**************************Login Section ******************************************/
+/******************************************** UI Essentials Below ******************************************/
     
     //create UILabel near top of screen with text 'username'
     usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 12, 90, 20)];
@@ -33,12 +33,13 @@
     }
     [self.view addSubview:usernameLabel];
     
-    //create textfield to the right of the username label
+    //create textfield to the right of the username label -captures user input
     usernameField = [[UITextField alloc] initWithFrame:CGRectMake(105, 8, 205, 30)];
     if (usernameField != nil)
     {
         usernameField.borderStyle = UITextBorderStyleRoundedRect;
         [self.view addSubview:usernameField];
+        [self resignFirstResponder]; //not sure if this works -  method to closing the keyboard
     }
     
     //create rounded rect button Login
@@ -103,6 +104,67 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+/******************************************* Call the buttons to action below ! ************************************/
+-(void)onClick:(UIButton *)button
+{
+    switch (button.tag) {
+        case LOGIN_BTN:
+        {
+                      
+            //checks length of text input; displays login info on success; if there is none, display an error message
+            if (usernameField.text.length == 0)
+            {
+                usernameEntr.text =@"Username cannot be empty";
+            } else {
+                NSString *fieldText = [usernameField text];
+                usernameEntr.text = [NSString stringWithFormat:@"User: %@ has logged in.", fieldText];
+            }
+        }
+            break;
+        case DATE_BTN:
+        {
+            //use NSDate, etc to auto format the date and display with alertView
+            NSDate *dateView = [NSDate date];
+            NSDateFormatter *dateFormating = [[NSDateFormatter alloc] init];
+            if (dateFormating !=nil)
+            {
+                [dateFormating setDateFormat:@"MMM dd, yyyy hh:mm:ss aaa zzzz"];
+                //create new NSString object w/ the now formatted date!
+                NSString *dateString = [dateFormating stringFromDate:dateView];
+                UIAlertView *dateView = [[UIAlertView alloc] initWithTitle:@"Current Date" message:dateString delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+                
+                //verify that the dateView has been formatted/created properly
+                if (dateView != nil)
+                {
+                    [dateView show];
+                }
+            }
+        }
+            break;
+        case INFO_BTN:
+        {
+            //setup the infobtnLabel text view
+            infobtnLabel.text = @"This application was created by: Andrew Phillips";
+            infobtnLabel.numberOfLines = 2;
+        }
+            break;
+            
+        default:
+        {
+            //error alertView object for default
+            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Warning: " message:@"Unexpected Error" delegate:nil cancelButtonTitle:@"Yes" otherButtonTitles:nil, nil];
+
+            //verify that this was created correctly
+            if (errorAlert != nil) {
+                [errorAlert show];
+            }
+        }
+            break;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
