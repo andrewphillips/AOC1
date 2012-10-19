@@ -20,6 +20,10 @@
 
 - (void)viewDidLoad
 {
+    
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
     self.view.backgroundColor = [UIColor lightGrayColor];
     
 /******************************************** UI Essentials Below ******************************************/
@@ -101,8 +105,7 @@
         [self.view addSubview:infobtnLabel];
     }
     
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -157,7 +160,8 @@
             UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Warning: " message:@"Unexpected Error" delegate:nil cancelButtonTitle:@"Yes" otherButtonTitles:nil, nil];
 
             //verify that this was created correctly
-            if (errorAlert != nil) {
+            if (errorAlert != nil)
+            {
                 [errorAlert show];
             }
         }
