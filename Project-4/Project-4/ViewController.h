@@ -19,4 +19,6 @@
     UILabel *infobtnLabel;
 }
 
+-(void)onClick:(UIButton *)button;
+
 @end

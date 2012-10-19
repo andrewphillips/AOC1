@@ -53,7 +53,7 @@
         loginButton.tag = LOGIN_BTN;
         loginButton.frame = CGRectMake(220, 55, 90, 30);
         loginButton.tintColor = [UIColor greenColor];
-        [loginButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        [loginButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [loginButton setTitle:@"Login" forState:UIControlStateNormal];
         [self.view addSubview:loginButton];
     }
@@ -80,7 +80,7 @@
         showTheDate.frame = CGRectMake(10, 250, 110, 40);
         showTheDate.tintColor = [UIColor grayColor];
         [showTheDate setTitle:@"Show Date" forState:UIControlStateNormal];
-        [showTheDate addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        [showTheDate addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:showTheDate];
     }
     
@@ -90,7 +90,7 @@
     {
         infoButton.tag = INFO_BTN;
         infoButton.frame = CGRectMake(10, 360, 30, 30);
-        [infoButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        [infoButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:infoButton];
     }
     
@@ -150,6 +150,7 @@
         {
             //setup the infobtnLabel text view
             infobtnLabel.text = @"This application was created by: Andrew Phillips";
+            infobtnLabel.textColor = [UIColor greenColor];
             infobtnLabel.numberOfLines = 2;
         }
             break;
