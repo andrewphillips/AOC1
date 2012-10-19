@@ -21,9 +21,6 @@
 - (void)viewDidLoad
 {
     
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
     self.view.backgroundColor = [UIColor lightGrayColor];
     
 /******************************************** UI Essentials Below ******************************************/
@@ -105,7 +102,8 @@
         [self.view addSubview:infobtnLabel];
     }
     
-    
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
 }
 
 
